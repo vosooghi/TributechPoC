@@ -22,10 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\1.Core\TributechPoC.Core.ApplicationServices\TributechPoC.Core.ApplicationServices.csproj" />
-    <ProjectReference Include="..\src\1.Core\TributechPoC.Core.Contracts\TributechPoC.Core.Contracts.csproj" />
-    <ProjectReference Include="..\src\1.Core\TributechPoC.Domain\TributechPoC.Domain.csproj" />
-    <ProjectReference Include="..\src\2.Infra\Data\TributechPoC.Infra.Data.Sql\TributechPoC.Infra.Data.Sql.csproj" />
+    <ProjectReference Include="..\..\1.Core\TributechPoC.Core.ApplicationServices\TributechPoC.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\1.Core\TributechPoC.Core.Contracts\TributechPoC.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\1.Core\TributechPoC.Domain\TributechPoC.Domain.csproj" />
+    <ProjectReference Include="..\..\1.Core\TributechPoC.Utilities\TributechPoC.Utilities.csproj" />
+    <ProjectReference Include="..\..\2.Infra\Data\TributechPoC.Infra.Data.Sql\TributechPoC.Infra.Data.Sql.csproj" />
+    <ProjectReference Include="..\TributechPoC.Endpoints.WebUI\TributechPoC.Endpoints.WebUI.csproj" />
   </ItemGroup>
 
 </Project>

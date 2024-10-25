@@ -21,8 +21,8 @@ namespace TributechPoC.Endpoints.WebUI.Controllers
         {
             var pocWebApiClient = _httpClientFactory.CreateClient("PoCWebAPI");
             string sensorsAsJsonString = await pocWebApiClient.GetStringAsync("Sensor/GetAll");
-            IList<SensorDTO> identityExceptionList = _serializer.Deserialize<List<SensorDTO>>(sensorsAsJsonString);
-            return View(identityExceptionList);
+            IList<SensorDTO> sensorsList = _serializer.Deserialize<List<SensorDTO>>(sensorsAsJsonString);
+            return View(sensorsList);
         }
 
         public async Task<IActionResult> Delete(long ID)
@@ -50,8 +50,13 @@ namespace TributechPoC.Endpoints.WebUI.Controllers
         }
 
         public async Task<IActionResult> GetSensorValues(string streamId)
-        {             
-            return View();
+        {
+            string query = string.Format("StreamId={0}&From={1}&To={2}",streamId,DateTimeOffset.Now.AddDays(-1).ToString(),DateTimeOffset.Now);
+            var testPlatformClient = _httpClientFactory.CreateClient("testPlatform");
+            var result = await testPlatformClient.GetStringAsync(query);
+
+            List<SensorValueItemDTO> sensorValuesList = _serializer.Deserialize<List<SensorValueItemDTO>>(result);
+            return View(sensorValuesList);
         }
     }
 }

@@ -38,6 +38,9 @@
                         <td>
                             <a asp-action="Delete" asp-route-id="@item.ID" class="text-decoration-none">Delete</a>
                         </td>
+                        <td>
+                            <a asp-action="GetSensorValues" asp-route-id="@item.BusinessId" class="text-decoration-none">Values</a>
+                        </td>
                     </tr>
                 }
             </tbody>
