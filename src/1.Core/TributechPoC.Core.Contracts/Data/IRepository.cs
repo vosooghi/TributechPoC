@@ -10,7 +10,7 @@
         /// Delete an entity with Id
         /// </summary>
         /// <param name="id">Id</param>
-        void Delete(Guid id);
+        void Delete(long id);
 
         /// <summary>
         /// Delete the given entity
@@ -35,8 +35,8 @@
         /// </summary>
         /// <param name="id">Id</param>
         /// <returns>Entity</returns>
-        TEntity Get(Guid id);
+        TEntity Get(long id);
 
-        Task<TEntity> GetAsync(TEntity id);
+        Task<TEntity> GetAsync(long id);
     }
 }

@@ -14,33 +14,37 @@ namespace TributechPoC.Infra.Data.Sql.Common
             _dbContext = dbContext;
         }
 
-        public void Delete(Guid id)
+        public void Delete(long id)
         {
             var entity = _dbContext.Set<TEntity>().Find(id);
             _dbContext.Set<TEntity>().Remove(entity);
+            Commit();
         }
 
         public void Delete(TEntity entity)
         {
             _dbContext.Set<TEntity>().Remove(entity);
+            Commit();
         }
 
         public void Insert(TEntity entity)
         {
             _dbContext.Set<TEntity>().Add(entity);
+            Commit();
         }
 
         public async Task InsertAsync(TEntity entity)
         {
             await _dbContext.Set<TEntity>().AddAsync(entity);
+            Commit();
         }
 
-        public TEntity Get(Guid id)
+        public TEntity Get(long id)
         {
             return _dbContext.Set<TEntity>().Find(id);
         }
 
-        public async Task<TEntity> GetAsync(TEntity id)
+        public async Task<TEntity> GetAsync(long id)
         {
             return await _dbContext.Set<TEntity>().FindAsync(id);
         }
