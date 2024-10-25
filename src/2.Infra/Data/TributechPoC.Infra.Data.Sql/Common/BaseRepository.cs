@@ -59,5 +59,10 @@ namespace TributechPoC.Infra.Data.Sql.Common
         {
             return _dbContext.SaveChangesAsync();
         }
+
+        public IList<TEntity> GetAll()
+        {
+            return _dbContext.Set<TEntity>().ToList();
+        }
     }
 }

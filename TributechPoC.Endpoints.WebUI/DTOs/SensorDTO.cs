@@ -1,4 +1,4 @@
-﻿namespace TributechPoC.Core.Contracts.DTOs
+﻿namespace TributechPoC.Endpoints.WebUI.DTOs
 {
     public class SensorDTO
     {

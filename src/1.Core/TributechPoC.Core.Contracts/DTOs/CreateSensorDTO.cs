@@ -1,9 +1,7 @@
 ﻿namespace TributechPoC.Core.Contracts.DTOs
 {
-    public class SensorDTO
+    public class CreateSensorDTO
     {
-        public string ID { get; set; }
-        public string BusinessId { get; set; }
         public string SensorName { get; set; }
         public string SensorLocation { get; set; }
         public string CreationTime { get; set; }

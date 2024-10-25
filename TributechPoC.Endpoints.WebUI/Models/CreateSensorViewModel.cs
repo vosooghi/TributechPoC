@@ -1,9 +1,7 @@
-﻿namespace TributechPoC.Core.Contracts.DTOs
+﻿namespace TributechPoC.Endpoints.WebUI.Models
 {
-    public class SensorDTO
-    {
-        public string ID { get; set; }
-        public string BusinessId { get; set; }
+    public class CreateSensorViewModel
+    {        
         public string SensorName { get; set; }
         public string SensorLocation { get; set; }
         public string CreationTime { get; set; }

@@ -1,0 +1,34 @@
+﻿@using TributechPoC.Endpoints.WebUI.DTOs
+@model List<SensorValueItemDTO>
+@{
+    ViewData["Title"] = "Sensor Values";
+}
+
+<div class="h5 mb-5 fw-bold">Sensor Values</div>
+
+<div class="rounded border p-4">
+    <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>StreamId</th>                    
+                    <th>Timestamp</th>
+                    <th>StoredAt</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>                        
+                        <td>@item.SensorId</td>
+                        <td>@item.Timestamp</td>
+                        <td>@item.StoredAt</td>
+                        <td>@item.Value</td>                        
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

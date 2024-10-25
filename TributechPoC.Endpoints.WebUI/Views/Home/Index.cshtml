@@ -1,0 +1,48 @@
+﻿@using TributechPoC.Endpoints.WebUI.DTOs
+@model IList<SensorDTO>
+@{
+    ViewData["Title"] = "Sensor List";
+}
+
+<div class="h5 mb-5 fw-bold">Sensor List</div>
+
+<div class="text-end mb-2">
+    <a asp-action="Insert" class="btn btn-success btn-sm">Insert new sensor</a>
+</div>
+
+<div class="rounded border p-4">
+    <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>StreamId</th>                                              
+                    <th>Sensor Name</th>
+                    <th>Sensor Location</th>
+                    <th>CreationTime</th>
+                    <th>UpperWarningLimit</th>
+                    <th>LowerWarningLimit</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>                        
+                        <td>@item.ID</td>
+                        <td>@item.BusinessId</td>                                              
+                        <td>@item.SensorName</td>
+                        <td>@item.SensorLocation</td>
+                        <td>@item.CreationTime</td>
+                        <td>@item.UpperWarningLimit</td>
+                        <td>@item.LowerWarningLimit</td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@item.ID" class="text-decoration-none">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

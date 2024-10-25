@@ -38,5 +38,7 @@
         TEntity Get(long id);
 
         Task<TEntity> GetAsync(long id);
+
+        IList<TEntity> GetAll();
     }
 }

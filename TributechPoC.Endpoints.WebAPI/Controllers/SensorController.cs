@@ -3,7 +3,6 @@ using System.Net;
 using TributechPoC.Core.ApplicationServices.Common;
 using TributechPoC.Core.ApplicationServices.Sensors;
 using TributechPoC.Core.Contracts.DTOs;
-using TributechPoC.Domain.Entities;
 
 namespace TributechPoC.Endpoints.WebAPI.Controllers
 {
@@ -17,7 +16,7 @@ namespace TributechPoC.Endpoints.WebAPI.Controllers
         {
             _sensorsServices = sensorsServices;
         }
-        [HttpGet("DeleteSensor")]
+        [HttpGet("Delete")]
         public async Task<IActionResult> Delete([FromQuery]long id) 
         {            
             var result = _sensorsServices.DeleteSensor(id);
@@ -31,8 +30,8 @@ namespace TributechPoC.Endpoints.WebAPI.Controllers
             }
             return BadRequest(result.Messages);
         }
-        [HttpPost("CreateSensor")]
-        public async Task<IActionResult> Insert([FromBody] SensorDTO sensor)
+        [HttpPost("Insert")]
+        public async Task<IActionResult> Insert([FromBody] CreateSensorDTO sensor)
         {
             var result = await _sensorsServices.InsertSensor(sensor);
             if (result.Status == ApplicationServiceStatus.Ok)
@@ -40,6 +39,25 @@ namespace TributechPoC.Endpoints.WebAPI.Controllers
                 return StatusCode((int)HttpStatusCode.Created);
             }
             return BadRequest(result.Messages);
+        }
+
+        [HttpGet("GetAll")]
+        public Task<List<SensorDTO>> GetAll()
+        {
+            var query =  _sensorsServices.GetAllSensors();
+
+            var result = query.Select(i => new SensorDTO
+            {
+                ID = i.ID.ToString(),
+                BusinessId = i.BusinessId.Value.ToString(),
+                CreationTime = i.CreationTime.ToString(),
+                SensorLocation = i.SensorLocation.ToString(),
+                SensorName = i.SensorName.Value.ToString(),
+                LowerWarningLimit = i.LowerWarningLimit,
+                UpperWarningLimit = i.UpperWarningLimit
+            }).ToList();
+
+            return Task.FromResult(result);
         }
     }
 }

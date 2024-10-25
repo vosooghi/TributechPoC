@@ -1,0 +1,36 @@
+﻿@model TributechPoC.Endpoints.WebUI.Models.CreateSensorViewModel
+
+@{
+    ViewData["Title"] = "Insert new sensor";
+}
+<div class="row g-0">
+    <div class="col-lg-8 mx-auto">
+        <div class="h5 mb-5 fw-bold">Insert new sensor</div>
+        <form asp-action="Insert" method="post">
+
+            <div class="h6 mt-5 mb-3">Sensor details</div>
+            <div class="rounded border p-4">
+                <div class="mb-3">
+                    <label asp-for="SensorName" class="form-label">Sensor Name</label>
+                    <input type="text" class="form-control" asp-for="SensorName">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="SensorLocation" class="form-label">Sensor Location</label>
+                    <input type="text" class="form-control" asp-for="SensorLocation">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="LowerWarningLimit" class="form-label">LowerWarningLimit</label>
+                    <input type="text" class="form-control" asp-for="LowerWarningLimit">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="UpperWarningLimit" class="form-label">UpperWarningLimit</label>
+                    <input type="text" class="form-control" asp-for="UpperWarningLimit">
+                </div>
+            </div>
+
+            <div class="text-end py-5">
+                <button type="submit" class="btn btn-success px-5">Insert</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Core.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Endpoints.WebAPI", "TributechPoC.Endpoints.WebAPI\TributechPoC.Endpoints.WebAPI.csproj", "{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Endpoints.WebUI", "TributechPoC.Endpoints.WebUI\TributechPoC.Endpoints.WebUI.csproj", "{AE393284-DEE5-44FD-8115-CD9673704B58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE393284-DEE5-44FD-8115-CD9673704B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE393284-DEE5-44FD-8115-CD9673704B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE393284-DEE5-44FD-8115-CD9673704B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE393284-DEE5-44FD-8115-CD9673704B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{A8C157E1-5A21-479C-B0D0-B00B156CA174} = {A4C2E02D-C998-47E0-8E36-2F4703232DB2}
 		{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E} = {735AADDB-9404-4D64-81D7-4278C824C72B}
 		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36} = {7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}
+		{AE393284-DEE5-44FD-8115-CD9673704B58} = {7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AD3161F-32F4-437A-B341-EBA03623659B}
