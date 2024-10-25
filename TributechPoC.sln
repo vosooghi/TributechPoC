@@ -13,21 +13,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infra", "2.Infra", "{AD97
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Endpoint", "3.Endpoint", "{7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Domain", "src\1.Core\TributechPoC.Domain\TributechPoC.Domain.csproj", "{7C12F217-AD88-4709-A321-3C3117D8AC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Domain", "src\1.Core\TributechPoC.Domain\TributechPoC.Domain.csproj", "{7C12F217-AD88-4709-A321-3C3117D8AC22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A4C2E02D-C998-47E0-8E36-2F4703232DB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Core.Contracts", "src\1.Core\TributechPoC.Core.Contracts\TributechPoC.Core.Contracts.csproj", "{6DCE91DB-CBBF-4AAB-90B9-733E11DDCB22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Core.Contracts", "src\1.Core\TributechPoC.Core.Contracts\TributechPoC.Core.Contracts.csproj", "{6DCE91DB-CBBF-4AAB-90B9-733E11DDCB22}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Utilities", "src\1.Core\TributechPoC.Utilities\TributechPoC.Utilities.csproj", "{AF246D53-8ACA-4DFA-B61B-8EE235CF78FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Infra.Data.Sql", "src\2.Infra\Data\TributechPoC.Infra.Data.Sql\TributechPoC.Infra.Data.Sql.csproj", "{A8C157E1-5A21-479C-B0D0-B00B156CA174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Core.ApplicationServices", "src\1.Core\TributechPoC.Core.ApplicationServices\TributechPoC.Core.ApplicationServices.csproj", "{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Core.ApplicationServices", "src\1.Core\TributechPoC.Core.ApplicationServices\TributechPoC.Core.ApplicationServices.csproj", "{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Endpoints.WebAPI", "TributechPoC.Endpoints.WebAPI\TributechPoC.Endpoints.WebAPI.csproj", "{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Core", "1.Core", "{FAFE1967-5AB0-4011-B99B-BFE2F90E0E08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Endpoints.WebUI", "TributechPoC.Endpoints.WebUI\TributechPoC.Endpoints.WebUI.csproj", "{AE393284-DEE5-44FD-8115-CD9673704B58}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infra", "2.Infra", "{A034C72B-4A30-4C70-B195-3A7D0AC6D35C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Endpoint", "3.Endpoint", "{3D3DBB66-6551-4277-8642-1B75A1EF5635}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Core.Domain.Tests", "tests\1.Core\TributechPoC.Core.Domain.Tests\TributechPoC.Core.Domain.Tests.csproj", "{B3CCE596-EB1C-4D29-A58C-1FB0512B25C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Endpoints.WebUI", "src\3.Endpoint\TributechPoC.Endpoints.WebUI\TributechPoC.Endpoints.WebUI.csproj", "{ED0E012C-135D-44BA-BCAA-1CBC20001A33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TributechPoC.Endpoints.WebAPI", "src\3.Endpoint\TributechPoC.Endpoints.WebAPI\TributechPoC.Endpoints.WebAPI.csproj", "{68C14004-6D79-42AB-8C04-7EA128020CAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +63,18 @@ Global
 		{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE393284-DEE5-44FD-8115-CD9673704B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE393284-DEE5-44FD-8115-CD9673704B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE393284-DEE5-44FD-8115-CD9673704B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE393284-DEE5-44FD-8115-CD9673704B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CCE596-EB1C-4D29-A58C-1FB0512B25C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CCE596-EB1C-4D29-A58C-1FB0512B25C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CCE596-EB1C-4D29-A58C-1FB0512B25C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CCE596-EB1C-4D29-A58C-1FB0512B25C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0E012C-135D-44BA-BCAA-1CBC20001A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0E012C-135D-44BA-BCAA-1CBC20001A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0E012C-135D-44BA-BCAA-1CBC20001A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0E012C-135D-44BA-BCAA-1CBC20001A33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C14004-6D79-42AB-8C04-7EA128020CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C14004-6D79-42AB-8C04-7EA128020CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C14004-6D79-42AB-8C04-7EA128020CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C14004-6D79-42AB-8C04-7EA128020CAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,8 +89,12 @@ Global
 		{AF246D53-8ACA-4DFA-B61B-8EE235CF78FA} = {735AADDB-9404-4D64-81D7-4278C824C72B}
 		{A8C157E1-5A21-479C-B0D0-B00B156CA174} = {A4C2E02D-C998-47E0-8E36-2F4703232DB2}
 		{EBAEDEFB-E5BE-4866-892F-E74F2CEB9F6E} = {735AADDB-9404-4D64-81D7-4278C824C72B}
-		{F4AD1936-1DBB-43E6-A0AE-1024C8426A36} = {7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}
-		{AE393284-DEE5-44FD-8115-CD9673704B58} = {7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}
+		{FAFE1967-5AB0-4011-B99B-BFE2F90E0E08} = {001B8D66-3A88-410D-A543-3BD39C056373}
+		{A034C72B-4A30-4C70-B195-3A7D0AC6D35C} = {001B8D66-3A88-410D-A543-3BD39C056373}
+		{3D3DBB66-6551-4277-8642-1B75A1EF5635} = {001B8D66-3A88-410D-A543-3BD39C056373}
+		{B3CCE596-EB1C-4D29-A58C-1FB0512B25C5} = {FAFE1967-5AB0-4011-B99B-BFE2F90E0E08}
+		{ED0E012C-135D-44BA-BCAA-1CBC20001A33} = {7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}
+		{68C14004-6D79-42AB-8C04-7EA128020CAC} = {7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AD3161F-32F4-437A-B341-EBA03623659B}
