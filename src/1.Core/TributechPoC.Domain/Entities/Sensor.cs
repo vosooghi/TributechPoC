@@ -1,5 +1,4 @@
-﻿using Ground.Samples.Core.Domain.People.ValueObjects;
-using TributechPoC.Domain.ValueObjects;
+﻿using TributechPoC.Domain.ValueObjects;
 
 namespace TributechPoC.Domain.Entities
 {

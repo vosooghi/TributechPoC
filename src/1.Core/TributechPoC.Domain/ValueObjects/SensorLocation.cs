@@ -1,9 +1,8 @@
 ﻿using TributechPoC.Domain.Exceptions;
 using TributechPoC.Domain.Shared;
-using TributechPoC.Domain.ValueObjects;
 using TributechPoC.Utilities;
 
-namespace Ground.Samples.Core.Domain.People.ValueObjects
+namespace TributechPoC.Domain.ValueObjects
 {
     public class SensorLocation : BaseValueObject<SensorName>
     {

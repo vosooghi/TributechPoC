@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Sensors\SensorsServices.cs~RF4c77cb32.TMP" />
+    <None Remove="Sensors\SensorsServices.cs~RF4c8d2003.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2.Infra\Data\TributechPoC.Infra.Data.Sql\TributechPoC.Infra.Data.Sql.csproj" />
+    <ProjectReference Include="..\TributechPoC.Core.Contracts\TributechPoC.Core.Contracts.csproj" />
+    <ProjectReference Include="..\TributechPoC.Domain\TributechPoC.Domain.csproj" />
+    <ProjectReference Include="..\TributechPoC.Utilities\TributechPoC.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

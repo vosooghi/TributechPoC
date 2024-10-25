@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\1.Core\TributechPoC.Core.Contracts\TributechPoC.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\1.Core\TributechPoC.Domain\TributechPoC.Domain.csproj" />
+    <ProjectReference Include="..\..\..\1.Core\TributechPoC.Utilities\TributechPoC.Utilities.csproj" /> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Sensors\" />
+  </ItemGroup>
+
+</Project>
