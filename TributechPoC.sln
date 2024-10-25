@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{923E0DB3-D8AD-4EFE-ABDC-131EE9ED4475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{001B8D66-3A88-410D-A543-3BD39C056373}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Core", "1.Core", "{735AADDB-9404-4D64-81D7-4278C824C72B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infra", "2.Infra", "{AD97341B-DE6E-45C6-B492-286594719041}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Endpoint", "3.Endpoint", "{7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Domain", "src\1.Core\TributechPoC.Domain\TributechPoC.Domain.csproj", "{7C12F217-AD88-4709-A321-3C3117D8AC22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TributechPoC.Utilities", "TributechPoC.Utilities\TributechPoC.Utilities.csproj", "{2D6ADDCC-1C49-4135-ADBE-16648A210968}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C12F217-AD88-4709-A321-3C3117D8AC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C12F217-AD88-4709-A321-3C3117D8AC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C12F217-AD88-4709-A321-3C3117D8AC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C12F217-AD88-4709-A321-3C3117D8AC22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D6ADDCC-1C49-4135-ADBE-16648A210968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6ADDCC-1C49-4135-ADBE-16648A210968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6ADDCC-1C49-4135-ADBE-16648A210968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6ADDCC-1C49-4135-ADBE-16648A210968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{735AADDB-9404-4D64-81D7-4278C824C72B} = {923E0DB3-D8AD-4EFE-ABDC-131EE9ED4475}
+		{AD97341B-DE6E-45C6-B492-286594719041} = {923E0DB3-D8AD-4EFE-ABDC-131EE9ED4475}
+		{7A6B7CD5-3370-4CAA-A2EA-1FF85F2DAE3E} = {923E0DB3-D8AD-4EFE-ABDC-131EE9ED4475}
+		{7C12F217-AD88-4709-A321-3C3117D8AC22} = {735AADDB-9404-4D64-81D7-4278C824C72B}
+		{2D6ADDCC-1C49-4135-ADBE-16648A210968} = {735AADDB-9404-4D64-81D7-4278C824C72B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AD3161F-32F4-437A-B341-EBA03623659B}
+	EndGlobalSection
+EndGlobal

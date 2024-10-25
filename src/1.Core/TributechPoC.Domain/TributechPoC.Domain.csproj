@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\Sensor.cs~RF4c043480.TMP" />
+    <None Remove="Shared\Messages.cs~RF4c0fb8fc.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\TributechPoC.Utilities\TributechPoC.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
